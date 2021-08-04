@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="text">Side Menu</div>
+      <ul>
+        <li>
+          <a href="#" class="act-btn"
+            >Actor
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="act-show">
+            <li>
+              <a href="#" class="act-int-btn"
+                >International
+                <span class="fas fa-caret-down second"></span>
+              </a>
+            </li>
+            <ul class="act-int-show">
+              <li>
+                <a href="#">Johnny Depp</a>
+              </li>
+              <li>
+                <a href="#">Robert Downey Jr</a>
+              </li>
+              <li>
+                <a href="#">Chris Evans</a>
+              </li>
+              <li>
+                <a href="#">Leonardo Di Caprio</a>
+              </li>
+              <li>
+                <a href="#">Lindsey Lohan</a>
+              </li>
+            </ul>
+            <li>
+              <a href="#" class="act-idn-btn"
+                >Indonesia
+                <span class="fas fa-caret-down third"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="pol-btn"
+            >Politicians
+            <span class="fas fa-caret-down fourth"></span>
+          </a>
+          <ul class="pol-show">
+            <li>
+              <a href="#" class="pol-int-btn"
+                >International
+                <span class="fas fa-caret-down fifth"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="pol-idn-btn"
+                >Indonesia
+                <span class="fas fa-caret-down sixth"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="sport-btn"
+            >Sports
+            <span class="fas fa-caret-down seventh"></span>
+          </a>
+          <ul class="sport-show">
+            <li>
+              <a href="#" class="sport-int-btn"
+                >International
+                <span class="fas fa-caret-down eigth"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sport-idn-btn"
+                >Indonesia
+                <span class="fas fa-caret-down ninth"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      $(".act-btn").click(function () {
+        $("nav ul .act-show").toggleClass("show");
+        $("nav ul .first").toggleClass("rotate");
+      });
+      $(".act-int-btn").click(function () {
+        $("nav ul ul .act-int-show").toggleClass("show2");
+        $("nav ul ul .second").toggleClass("rotate");
+      });
+      $(".pol-btn").click(function () {
+        $("nav ul .pol-show").toggleClass("show4");
+        $("nav ul .fourth").toggleClass("rotate");
+      });
+      $(".sport-btn").click(function () {
+        $("nav ul .sport-show").toggleClass("show7");
+        $("nav ul .seventh").toggleClass("rotate");
+      });
+    </script>
+  </body>
+</html>
